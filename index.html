@@ -47,7 +47,7 @@
 			<a href="#contact" class="h-btn">Contactez nous</a>
 		</div>
 	</header>
-
+iujkj b nm,
 	<!---hero-->
 	<section class="hero" id="home">
 		<div class="main-content" data-aos="fade-in">
@@ -64,7 +64,7 @@
 			</div>
 
 			<div class="main-btn">
-				<a href="#" class="btn">Obtenez un devis</a>
+				<a href="#contact" class="btn">Obtenez un devis</a>
                 <!---<a href="#" class="btn btn2">Download CV</a>-->
 				
 			</div>
@@ -248,6 +248,7 @@
 			</form>
 		</div>
 	</section>
+	
 
 	<div class="footer">
 		<div class="copyright">
@@ -261,7 +262,23 @@
 
 	<!---js link-->
 	<script src="js/script.js"></script>
+	<script>
+		function submitForm(event) {
+			event.preventDefault(); // Empêche le comportement par défaut du formulaire
 	
+			// Envoyer une requête AJAX ou effectuer d'autres opérations ici
+			// ...
+	
+			// Afficher le message de soumission réussie
+			alert("Soumission réussie. Merci d'avoir contacté UCodeByUs!");
+	
+			// Réinitialiser les champs du formulaire
+			document.getElementById("name").value = "";
+			document.getElementById("email").value = "";
+			document.getElementById("subject").value = "";
+			document.getElementById("message").value = "";
+		}
+	</script>
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.resend.io/resend.min.js"></script>
